@@ -6,17 +6,21 @@
   border: 1px solid transparent;
   font-size: 1rem;
   border-radius: 2rem;
+  
 
   &.bg--secondary {
     @extend .btn;
     background-color: $clr-secondary;
+    border-radius: 0;
     border: 1px solid $clr-secondary;
     font-weight: 700;
     color: $clr-light;
     box-shadow: rgba(231, 4, 4, 0.1) 0px 4px 12px;
+    border-radius: none;
     &:hover {
-      background-color: $clr-light;
-      color: $clr-secondary;
+      background-color: $clr-dark;
+      color: $clr-light;
+      
     }
   }
 

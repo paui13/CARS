@@ -2,5 +2,88 @@
 @use "../base/" as *;
 
 .fordSlider{
-    display: none;
+    
+    &__card{
+        h2{
+            margin-left: -37.5rem;
+            margin-top: -28.5rem;
+            position: absolute;
+            font-size: 3rem;
+            font-weight: 400;  
+        }
+    }
+}
+.homeInfo{
+   
+    &__wrapper{
+       text-align: center; 
+       background-color: $clr-primary;
+       padding: 6rem;
+       @include grid(4, 2rem)
+    }
+    &__card{
+        max-width: 20rem;
+        &--title{
+            border: solid gray;
+            border-radius: 0 0 4px 0;
+            padding-bottom:2rem ;
+            font-size: 1.4rem;
+            border-width: 0 0 .1rem 0;
+            opacity: 60%;
+
+        }
+       
+        &--text{
+            font-size: 1rem;
+            padding: 2rem 0 3rem;
+           
+        }
+        &--button{
+            margin-top: 2rem;
+           
+        }
+    }
+}
+
+.services{
+    &__wrapper{
+        background-color:$clr-secondary;
+        padding: 11rem;    
+    }
+    &__items{
+        @include grid(3, 1rem);
+    }
+    &__title{
+        font-size: 3rem;
+        font-weight: 400;
+        border: 1px solid ;
+        border-width: 0 0 0.1rem 0;
+        margin-top: -4rem;
+        margin-left: -2rem;
+        
+    }
+    &__card{
+        max-width: 20rem;
+        margin-top: 6rem;
+        margin-left: -.5rem;
+        
+    }
+
+}
+.homeAbout{
+    &__wrapper{
+        background-color: $clr-primary;
+        padding: 15rem;
+        
+    }
+    &--text{
+        color: $clr-dark;
+    }
+    &__what{
+        &--title{
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
 }
